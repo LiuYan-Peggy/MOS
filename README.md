@@ -8,4 +8,4 @@ Implementation of MOS-index depends on Python 3.6 and R 3.6.3.<br>
 
 Import MOS.py file into Python and import RRA.r file into R, then load the dataset to test.
 rra.csv is a .csv file without any information at initial state, which is used for storing the aggregation result, then the result can be loaded by MOS.py from rra.csv.
-It should be noted that three files (MOS.py, RRA.r, rra.csv) should be downloaded in the same file.
+It should be noted that it would be better if three files (MOS.py, RRA.r, rra.csv) are downloaded in the same file.
