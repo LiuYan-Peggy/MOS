@@ -258,7 +258,7 @@ if __name__ == '__main__':
                "Sylt", "world_trade", "yeast_ito", "Ythan"]
 
     name = 'karate'
-    net_path = r"C:/data" + "/" + name + ".txt"
+    net_path = r"C:/data/" + name + ".txt"
     G = nx.read_edgelist(net_path, delimiter='\t', nodetype=str)
 
     global M, N, node_index, index_node
