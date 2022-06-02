@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Change the input network name or path in lines 261-263
+Change the input network name or path in lines 260-262
 """
 import networkx as nx
 import numpy as np
