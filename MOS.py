@@ -225,10 +225,10 @@ def main(G):
     c_1_new = robjects.FloatVector(new_score(quantile_list))
     c_5_new = robjects.FloatVector(new_score(fix_list))
     c_50_new = robjects.FloatVector(new_score(rank_list))
-    robjects.r.source('F:/Peggy/node centrality/SPD/rra/RRA.r')
+    robjects.r.source('RRA.r')
     df = robjects.r.rbind(c_1_new, c_5_new, c_50_new)
     robjects.r.rra(df, N)
-    result = pd.read_csv("F:/Peggy/node centrality/SPD/rra/rra.csv")
+    result = pd.read_csv("rra.csv")
 
     final_score = {}
     for i in range(N):
@@ -258,7 +258,7 @@ if __name__ == '__main__':
                "Sylt", "world_trade", "yeast_ito", "Ythan"]
 
     name = 'karate'
-    net_path = r"F:/Peggy/node centrality/h-index/data" + "/" + name + ".txt"
+    net_path = r"C:/data" + "/" + name + ".txt"
     G = nx.read_edgelist(net_path, delimiter='\t', nodetype=str)
 
     global M, N, node_index, index_node
