@@ -1,7 +1,10 @@
 # The statistical nature of *h*-index of a network node<br>
 
 ## Introduction<br>
-MOS-index is an aggregation method of multiple order statistics, which is proposed in "The statistical nature of *h*-index of a network node".
+We discover the statistical nature of *h*-index from the perspective of order statistics, and we obtain a new family of centrality indices by generalizing the h-index along this direction. 
+However, using only one order statistic to gauge the node importance cannot fully exploit the rich information encoded in the order statistics. 
+To this end, we propose to integrate ranking results from multiple order statistics, which is named MOS-index.
+The above showed source codes are the calculation of MOS-index for each node in the network.
 
 ## Usage<br>
 Implementation of MOS-index depends on Python 3.6 and R 3.6.3.<br>
